@@ -60,11 +60,11 @@
 
 	var _componentsLayout2 = _interopRequireDefault(_componentsLayout);
 
-	var _componentsBook = __webpack_require__(217);
+	var _componentsBook = __webpack_require__(218);
 
 	var _componentsBook2 = _interopRequireDefault(_componentsBook);
 
-	var _componentsHome = __webpack_require__(222);
+	var _componentsHome = __webpack_require__(223);
 
 	var _componentsHome2 = _interopRequireDefault(_componentsHome);
 
@@ -21448,7 +21448,7 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(216);
+	var _Footer = __webpack_require__(217);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -23417,6 +23417,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Search = __webpack_require__(216);
+
+	var _Search2 = _interopRequireDefault(_Search);
+
 	var _require = __webpack_require__(157);
 
 	var RouteHandler = _require.RouteHandler;
@@ -23440,27 +23444,32 @@
 	        'div',
 	        { className: 'section header' },
 	        _react2['default'].createElement(
-	          Link,
-	          { to: 'home' },
+	          'div',
+	          { className: 'container' },
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'container' },
+	            { className: 'row' },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'row' },
+	              { className: 'column' },
 	              _react2['default'].createElement(
-	                'div',
-	                { className: 'column' },
+	                Link,
+	                { to: 'home' },
 	                _react2['default'].createElement(
 	                  'h3',
 	                  { className: 'title' },
 	                  'book scrape'
-	                ),
-	                _react2['default'].createElement(
-	                  'h4',
-	                  { className: 'description' },
-	                  'scraping book websites since October 21, 2015.'
 	                )
+	              ),
+	              _react2['default'].createElement(_Search2['default'], null)
+	            ),
+	            _react2['default'].createElement(
+	              'div',
+	              { className: 'column' },
+	              _react2['default'].createElement(
+	                'h4',
+	                { className: 'description' },
+	                'scraping book websites since October 21, 2015.'
 	              )
 	            )
 	          )
@@ -23477,6 +23486,68 @@
 
 /***/ },
 /* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _require = __webpack_require__(157);
+
+	var RouteHandler = _require.RouteHandler;
+	var Link = _require.Link;
+
+	var Preview = (function (_React$Component) {
+	  _inherits(Preview, _React$Component);
+
+	  function Preview() {
+	    _classCallCheck(this, Preview);
+
+	    _get(Object.getPrototypeOf(Preview.prototype), 'constructor', this).apply(this, arguments);
+	  }
+
+	  _createClass(Preview, [{
+	    key: 'changeInput',
+	    value: function changeInput(e) {}
+	  }, {
+	    key: 'render',
+	    value: function render() {
+
+	      return _react2['default'].createElement(
+	        'div',
+	        { className: 'search' },
+	        _react2['default'].createElement('input', { type: 'text',
+	          className: 'input-text',
+	          onKeyUp: this.changeInput }),
+	        _react2['default'].createElement('i', { className: 'search-button icon' })
+	      );
+	    }
+	  }]);
+
+	  return Preview;
+	})(_react2['default'].Component);
+
+	exports['default'] = Preview;
+	module.exports = exports['default'];
+
+/***/ },
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23536,7 +23607,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23555,11 +23626,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _books = __webpack_require__(218);
+	var _books = __webpack_require__(219);
 
 	var _books2 = _interopRequireDefault(_books);
 
-	var request = __webpack_require__(219);
+	var request = __webpack_require__(220);
 
 	var Book = (function (_React$Component) {
 	  _inherits(Book, _React$Component);
@@ -23646,7 +23717,7 @@
 	module.exports = Book;
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23676,7 +23747,7 @@
 	module.exports = data;
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23685,8 +23756,8 @@
 
 	'use strict';
 
-	var Emitter = __webpack_require__(220);
-	var reduce = __webpack_require__(221);
+	var Emitter = __webpack_require__(221);
+	var reduce = __webpack_require__(222);
 
 	/**
 	 * Root reference for iframes.
@@ -24841,7 +24912,7 @@
 	module.exports = request;
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports) {
 
 	
@@ -25007,7 +25078,7 @@
 	};
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports) {
 
 	
@@ -25036,7 +25107,7 @@
 	};
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25055,15 +25126,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Preview = __webpack_require__(223);
+	var _Preview = __webpack_require__(224);
 
 	var _Preview2 = _interopRequireDefault(_Preview);
 
-	var _books = __webpack_require__(218);
+	var _books = __webpack_require__(219);
 
 	var _books2 = _interopRequireDefault(_books);
 
-	var request = __webpack_require__(219);
+	var request = __webpack_require__(220);
 
 	var Home = (function (_React$Component) {
 	  _inherits(Home, _React$Component);
@@ -25098,7 +25169,7 @@
 	module.exports = Home;
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

@@ -1,4 +1,4 @@
-/* Shared
+/* General
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 html {
@@ -10,21 +10,6 @@ html {
 p, h1, h2, h3, h4, h5, span {
   color: #f0f0f0;
   font-weight: normal;
-}
-
-.button {
-  border-radius: 100px;
-}
-
-.button.button-primary {
-  color: #d4fd02;
-  background-color: rgb(137, 138, 140);
-  border-color: rgb(137, 138, 140);
-}
-
-.button.button-primary:hover {
-  background-color: rgb(137, 138, 140);
-  border-color: rgb(137, 138, 140);  
 }
 
 .section {
@@ -50,6 +35,7 @@ a:hover {
 /*  End ––––––––––––––––––––––––––––––––––––––––––– */
 
 
+
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
@@ -68,7 +54,67 @@ a:hover {
   color: rgb(137, 138, 140);
   font-size: 3rem;
 }
+
 /*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Search
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.icon {
+  position: relative;
+  display: inline-block;
+}
+ 
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+}
+
+.search {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.search .input-text {
+  display: inline-block;
+  float: left;
+}
+
+.search-button {
+  cursor: pointer;
+}
+
+.search-button::after {
+  width: 1.6em;
+  height: 1.6em;
+  top: -0.8em;
+  left: 0.5em;
+  border: .2em solid white;
+  border-radius: 0.8em;
+}
+
+.search-button::before {
+  width: 1.3em;
+  height: .2em;
+  margin: .8em 0 0 1.5em;
+  transform: rotate(40deg);
+  background: white;
+}
+
+.search-button:hover::after {
+  border: .2em solid #d4fd02;  
+}
+.search-button:hover::before {
+  background: #d4fd02;
+}
+
+
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
 
 
 /* Book

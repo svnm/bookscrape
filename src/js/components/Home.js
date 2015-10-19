@@ -23,7 +23,7 @@ class Home extends React.Component {
 
     return (
 
-      <div id="home">        
+      <div id="home">  
         { previewList }
       </div>
 
