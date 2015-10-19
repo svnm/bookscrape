@@ -1,0 +1,111 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  background-color: rgb(33, 33, 33);
+  color: #f0f0f0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, span {
+  color: #f0f0f0;
+  font-weight: normal;
+}
+
+.button {
+  border-radius: 100px;
+}
+
+.button.button-primary {
+  color: #d4fd02;
+  background-color: rgb(137, 138, 140);
+  border-color: rgb(137, 138, 140);
+}
+
+.button.button-primary:hover {
+  background-color: rgb(137, 138, 140);
+  border-color: rgb(137, 138, 140);  
+}
+
+.section {
+  padding: 6rem 0 6rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+
+a {
+  color: #f0f0f0;
+  text-decoration: none;  
+}
+
+a:hover {
+  color: #f0f0f0;
+  text-decoration: underline;  
+}
+
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  background-image: url('../img/values-bg.jpg');
+  background-size: cover;
+  padding-bottom: 5rem;
+  color: #d4fd02;
+}
+
+.header .title {
+  font-size: 3.5rem;
+  color: #d4fd02;
+}
+
+.header .description {
+  color: rgb(137, 138, 140);
+  font-size: 3rem;
+}
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Book
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.book {
+  border-bottom: 1px solid #d4fd02;
+}
+
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+  color: #d4fd02;
+  padding: 2rem;
+}
+
+.footer .description { 
+  color: #d4fd02;
+  margin-bottom: 2rem;
+}
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than 550 */
+@media (min-width: 550px) {
+}
+
+/* Larger than 750 */
+@media (min-width: 750px) {
+}
+
+/* Larger than 1000 */
+@media (min-width: 1000px) {
+}
+/*  End ––––––––––––––––––––––––––––––––––––––––––– */
